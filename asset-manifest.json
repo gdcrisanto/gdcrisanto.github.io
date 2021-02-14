@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gdcrisanto.github.io/static/css/main.84f8241d.chunk.css",
+    "main.js": "/gdcrisanto.github.io/static/js/main.202a5923.chunk.js",
+    "main.js.map": "/gdcrisanto.github.io/static/js/main.202a5923.chunk.js.map",
+    "runtime-main.js": "/gdcrisanto.github.io/static/js/runtime-main.05f9a9d1.js",
+    "runtime-main.js.map": "/gdcrisanto.github.io/static/js/runtime-main.05f9a9d1.js.map",
+    "static/js/2.578e00a4.chunk.js": "/gdcrisanto.github.io/static/js/2.578e00a4.chunk.js",
+    "static/js/2.578e00a4.chunk.js.map": "/gdcrisanto.github.io/static/js/2.578e00a4.chunk.js.map",
+    "static/js/3.58498506.chunk.js": "/gdcrisanto.github.io/static/js/3.58498506.chunk.js",
+    "static/js/3.58498506.chunk.js.map": "/gdcrisanto.github.io/static/js/3.58498506.chunk.js.map",
+    "index.html": "/gdcrisanto.github.io/index.html",
+    "static/css/main.84f8241d.chunk.css.map": "/gdcrisanto.github.io/static/css/main.84f8241d.chunk.css.map",
+    "static/js/2.578e00a4.chunk.js.LICENSE.txt": "/gdcrisanto.github.io/static/js/2.578e00a4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05f9a9d1.js",
+    "static/js/2.578e00a4.chunk.js",
+    "static/css/main.84f8241d.chunk.css",
+    "static/js/main.202a5923.chunk.js"
+  ]
+}
