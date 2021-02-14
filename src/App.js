@@ -1,25 +1,78 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TodoApp from "./TodoApp";
+import TaskTracker from "./TaskTracker";
+import Home from "./Home";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav className="nav-menu">
+          <ul>
+            <li className="nav-item">
+              <NavLink exact to="/" activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/about" activeClassName="active">
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/users" activeClassName="active">
+                Users
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/todo" activeClassName="active">
+                Todo App
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/task-tracker" activeClassName="active">
+                Task Tracker App
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/todo">
+            <TodoApp />
+          </Route>
+          <Route path="/task-tracker">
+            <TaskTracker />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
+}
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
 }
 
 export default App;

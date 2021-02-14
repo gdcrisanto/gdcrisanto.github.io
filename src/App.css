@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-menu .nav-item .active{
+  font-weight: bold;
+}
+
+.nav-menu ul{
+  display:flex;
+  justify-content: center;
+}
+
+.nav-menu .nav-item {
+  display:flex;
+}
+
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todo-input{
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todo-list .list-group-item{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+a.list-group-item + a.list-group-item{
+  margin-top: 5px;
+}

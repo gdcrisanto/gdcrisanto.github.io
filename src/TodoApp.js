@@ -1,0 +1,92 @@
+import "./App.css";
+import React from "react";
+
+
+const TodoForm = ({addTodo}) => {
+  let input;
+  return (
+    <form className ="todo-input"
+      onSubmit={(e) => {
+        e.preventDefault();
+        addTodo(input.value);
+        input.value = "";
+      }}
+    >
+      <input
+        type="text"
+        ref={(node) => {
+          input = node;
+        }}
+      />
+    </form>
+  );
+};
+
+const Todo = ({todo, remove})=>{
+  return (
+  <a 
+    className="list-group-item" 
+    onClick={() => {remove(todo.id)}}>
+      {todo.task}
+  </a>
+  );
+}
+
+const TodoList = ({todos, remove}) => {
+  const todoNode = todos.map((todo) => {
+    return (<Todo todo={todo} key={todo.id} remove ={remove}/>)
+  });
+  return(<ul className="todo-list">{todoNode}</ul>);
+}
+
+window.id = 0;
+class TodoApp extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {tasks:[
+        {
+            task: 'Study React',
+            id: 1,
+        },
+        {
+            task: 'Play Genshin Impact',
+            id: 2,
+        },
+        {
+            task: 'Cook Food',
+            id: 3,
+        },
+        {
+            task: 'Watch Tv',
+            id: 4,
+        },
+    ]};
+  }
+
+  addTodo = (task) =>{
+    const todo = {task:task, id: window.id++};
+    this.state.tasks.push(todo);
+    this.setState({tasks: this.state.tasks});
+  }
+
+  removeTodo = (id) => {
+    const remainder = this.state.tasks.filter((todo) => {
+      if(todo.id !== id)return todo;
+    });
+    this.setState({data: remainder});
+  }
+
+  render(){
+    console.log(this.state.tasks);
+    return (
+      <div className="todo-container">
+        <TodoForm addTodo={this.addTodo.bind(this)}/>
+        <TodoList 
+          todos={this.state.tasks} 
+          remove={this.removeTodo}/>
+      </div>
+    )
+  }
+};
+
+export default TodoApp;
