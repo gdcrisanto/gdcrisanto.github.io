@@ -2,7 +2,7 @@ import "./App.css";
 import TaskTracker from "./TaskTracker";
 import Home from "./Home";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   NavLink
