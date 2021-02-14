@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { useState } from 'react'
 
 const TaskForm = ({onAdd}) => {
@@ -6,7 +7,8 @@ const TaskForm = ({onAdd}) => {
 
 
     return (
-        <form onSubmit ={(e) => {
+        <form className ="task-input"
+            onSubmit ={(e) => {
          e.preventDefault();
          
         if(!text){
@@ -25,11 +27,11 @@ const TaskForm = ({onAdd}) => {
 
 const TaskItems = ({tasks, onDelete}) => {
     return(
-        <div>
+        <ul className="task-list">
             {tasks.map((task) => (
-                <div key={task.id} onClick={() => onDelete(task.id)}>{task.text}</div>
+                <div className="list-group-item"  key={task.id} onClick={() => onDelete(task.id)}>{task.text}</div>
             ))}
-        </div>
+        </ul>
     )
 }
 
@@ -37,28 +39,27 @@ const TaskTracker = () => {
     const [tasks, setTasks] = useState([
         {
             text: 'Study React',
-            id: 1,
+            id: 0,
         },
         {
             text: 'Play Genshin Impact',
-            id: 2,
+            id: 1,
         },
         {
             text: 'Cook Food',
-            id: 3,
+            id: 2,
         },
         {
             text: 'Watch Tv',
-            id: 4,
+            id: 3,
         },
     ])
 
     const AddTask =(task) =>{
-
-        const id = ++tasks.length;
-        const newTask = {text: task, id: id};
+        const id = task+Math.floor(Math.random() * 9999);
+        const newTask = {text: task, id:id};
         setTasks([...tasks,newTask]);
-        console.log();
+        console.log(tasks);
 
     }
 
@@ -67,10 +68,10 @@ const TaskTracker = () => {
 }
     
     return (
-        <>
+        <div className="task-container">
             <TaskForm onAdd={AddTask}/>
             <TaskItems tasks={tasks} onDelete={DeleteTask}/>
-        </>
+        </div>
     );
     
 }

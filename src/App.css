@@ -55,31 +55,30 @@
 }
 
 
-.todo-container{
+.task-container{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.todo-input{
+.task-input{
   display: flex;
   justify-content: center;
 }
 
-.todo-list{
+.task-list{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.todo-list .list-group-item{
+.task-list .list-group-item{
   display: flex;
   justify-content: center;
-  padding: 20px;
-  border-style: solid;
-  border-width: 1px;
+  padding: 5px;
+  background-color: rgb(209, 209, 209);
 }
 
-a.list-group-item + a.list-group-item{
+.list-group-item + .list-group-item{
   margin-top: 5px;
 }

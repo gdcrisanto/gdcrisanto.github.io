@@ -1,5 +1,4 @@
 import "./App.css";
-import TodoApp from "./TodoApp";
 import TaskTracker from "./TaskTracker";
 import Home from "./Home";
 import {
@@ -31,11 +30,6 @@ function App() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/todo" activeClassName="active">
-                Todo App
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink to="/task-tracker" activeClassName="active">
                 Task Tracker App
               </NavLink>
@@ -51,9 +45,6 @@ function App() {
           </Route>
           <Route path="/users">
             <Users />
-          </Route>
-          <Route path="/todo">
-            <TodoApp />
           </Route>
           <Route path="/task-tracker">
             <TaskTracker />
