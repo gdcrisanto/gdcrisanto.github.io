@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import { useState } from 'react'
+import {useSelector, useDispatch} from 'react-redux';
+import {addItem, removeItem} from './actions';
 
 const TaskForm = ({onAdd}) => {
     const [text,setText] = useState('')
@@ -36,36 +38,20 @@ const TaskItems = ({tasks, onDelete}) => {
 }
 
 const TaskTracker = () => {
-    const [tasks, setTasks] = useState([
-        {
-            text: 'Study React',
-            id: 0,
-        },
-        {
-            text: 'Play Genshin Impact',
-            id: 1,
-        },
-        {
-            text: 'Cook Food',
-            id: 2,
-        },
-        {
-            text: 'Watch Tv',
-            id: 3,
-        },
-    ])
+    const tasks = useSelector(state => state);
+    const dispatch = useDispatch();
 
-    const AddTask =(task) =>{
+    const AddTask = (task) =>{
         const id = task+Math.floor(Math.random() * 9999);
         const newTask = {text: task, id:id};
-        setTasks([...tasks,newTask]);
-        console.log(tasks);
+        dispatch(addItem(newTask));
 
     }
 
     const DeleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id))
-}
+        const filteredTasks = tasks.filter((task) => task.id !== id)
+        dispatch(removeItem(filteredTasks));
+    }
     
     return (
         <div className="task-container">
