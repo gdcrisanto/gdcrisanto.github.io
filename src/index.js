@@ -8,6 +8,8 @@ import {Provider} from 'react-redux';
 import updateTasks from './tasks-reducer';
 
 
+
+
 //store -> global state
 let store = createStore(updateTasks);
 store.subscribe(()=> console.log(store.getState()));

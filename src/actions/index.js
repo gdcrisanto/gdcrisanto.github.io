@@ -1,13 +1,7 @@
 //action -> what you want to do with your store
-export const addItem = (newTask) =>{
+export const initItems = (Tasks) =>{
   return {
-    type: 'addItem',
-    payload: newTask
-  }
-}
-export const removeItem = (filteredTasks) =>{
-  return {
-    type: 'removeItem',
-    payload: filteredTasks
+    type: 'initItems',
+    payload: Tasks
   }
 }
