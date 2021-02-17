@@ -5,16 +5,20 @@ const updateTasks = (state = [
     "id": 0
   },
   {
-    "text": "Play Genshin Impact",
+    "text": "Play video games",
     "id": 1
   },
   {
-    "text": "Cook Food",
+    "text": "Cook food",
     "id": 2
   },
   {
-    "text": "Watch Tv",
+    "text": "Listen to music",
     "id": 3
+  },
+  {
+    "text": "Sketch portraits",
+    "id": 4
   }
 ], action) => {
   switch(action.type){
