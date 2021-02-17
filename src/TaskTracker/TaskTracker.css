@@ -1,0 +1,36 @@
+
+.task-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task-input{
+  display: flex;
+  justify-content: center;
+}
+
+.task-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.task-list .list-group-item{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(242, 242, 242);
+}
+
+.list-group-item + .list-group-item{
+  margin-top: 5px;
+}
+
+.task-header{
+  display: flex;
+  justify-content: center;
+}

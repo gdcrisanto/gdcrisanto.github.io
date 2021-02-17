@@ -90,3 +90,30 @@
 // };
 
 // export default TodoApp;
+
+
+
+
+
+
+
+
+
+    // get axios for db information
+
+    // React.useEffect(() =>{
+    //     const axios = require('axios').default;
+    //     axios.get('tasksData.json')
+    //     .then(function (response) {
+    //         // handle success
+    //         dispatch(initItems(response.data.tasks)); 
+    //         console.log(response.data.tasks);
+    //     })
+    //     .catch(function (error) {
+    //         // handle error
+    //         console.log(error);
+    //     })
+    //     .then(function () {
+    //         // always executed
+    //     });
+    // },[]);

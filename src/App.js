@@ -1,5 +1,5 @@
 import "./App.css";
-import TaskTracker from "./TaskTracker";
+import TaskTracker from "./TaskTracker/TaskTracker";
 import Home from "./Home";
 import {
   HashRouter as Router,
@@ -20,16 +20,6 @@ function App() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/about" activeClassName="active">
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/users" activeClassName="active">
-                Users
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink to="/task-tracker" activeClassName="active">
                 Task Tracker App
               </NavLink>
@@ -40,12 +30,6 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
           <Route path="/task-tracker">
             <TaskTracker />
           </Route>
@@ -56,14 +40,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;
