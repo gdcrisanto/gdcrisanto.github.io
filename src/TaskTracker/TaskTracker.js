@@ -1,7 +1,7 @@
 import React from "react";
 import "./TaskTracker.css";
 import {useSelector, useDispatch} from 'react-redux';
-import {initItems} from './../actions';
+import {initItems} from './actions';
 import TaskHeader from './TaskHeader';
 import TaskForm from './TaskForm';
 import TaskItems from './TaskItems';

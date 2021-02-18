@@ -1,6 +1,6 @@
 import "./App.css";
 import TaskTracker from "./TaskTracker/TaskTracker";
-import Home from "./Home";
+import Home from "./Home/Home";
 import {
   HashRouter as Router,
   Switch,
