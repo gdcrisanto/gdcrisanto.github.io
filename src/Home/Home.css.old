@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .home-container h2{
@@ -16,4 +17,3 @@
     /* font-family: 'Overpass', sans-serif; */
     margin: 0px;
 }
-

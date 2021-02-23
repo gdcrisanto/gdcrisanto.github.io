@@ -1,5 +1,3 @@
-import TaskForm from "./TaskForm"
-
 const TaskItems = ({tasks, onDelete}) => {
     return(
         <ul className="task-list">

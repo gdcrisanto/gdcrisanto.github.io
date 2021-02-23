@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 
 const TaskForm = ({onAdd}) => {
@@ -19,7 +18,7 @@ const TaskForm = ({onAdd}) => {
         setText('');
 
      }} >
-            <input type="text" value={text} onChange={(e)=>setText(e.target.value)}/>
+            <input class="input-text" type="text" value={text} onChange={(e)=>setText(e.target.value)}/>
             <input class="btn" type="submit" value="Submit"/>
         </form>
     )

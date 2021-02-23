@@ -1,7 +1,7 @@
 //reducer -> how to transition states
 const updateTasks = (state = [
   {
-    "text": "Study React",
+    "text": "Study Web Development",
     "id": 0
   },
   {

@@ -1,0 +1,40 @@
+div{
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+#root{
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  flex-direction: column;
+}
+.row{
+  width: 100%;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.nav-menu{
+    ul{
+        display:flex;
+        justify-content: center;
+    }
+    .nav-item{
+        display:flex; 
+        font-weight: 500;
+        font-family: 'Overpass', sans-serif;
+
+        a{
+            text-decoration: none;
+            color: #6c6ea0;
+        }
+        
+        .active{
+            font-weight:bold;
+            color: #515279;
+        }
+    }
+}

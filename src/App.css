@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,12 +35,25 @@
   to {
     transform: rotate(360deg);
   }
+} */
+div{
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
 
 #root{
   font-family: 'Raleway', sans-serif;
+  width: 100%;
+  flex-direction: column;
+}
+.row{
+  width: 100%;
 }
 
+.col{
+  flex-direction: column;
+}
 .nav-menu .nav-item {
   display:flex;
   font-weight: 500;

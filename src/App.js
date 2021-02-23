@@ -11,7 +11,7 @@ import {
 function App() {
   return (
     <Router>
-      <div>
+      <div className="row">
         <nav className="nav-menu">
           <ul>
             <li className="nav-item">
@@ -26,9 +26,11 @@ function App() {
             </li>
           </ul>
         </nav>
+      </div>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      {/* A <Switch> looks through its children <Route>s and
+          renders the first one that matches the current URL. */}
+      <div className="row">
         <Switch>
           <Route path="/task-tracker">
             <TaskTracker />

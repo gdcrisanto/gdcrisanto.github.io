@@ -1,0 +1,16 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    
+    h2{
+        font-family: 'Overpass', sans-serif;
+        margin: 0px;
+    }
+    
+    h1{
+        margin: 0px;
+    }
+    
+}

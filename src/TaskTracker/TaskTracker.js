@@ -1,14 +1,17 @@
 import React from "react";
 import "./TaskTracker.css";
-import {useSelector, useDispatch} from 'react-redux';
+import {connect, useSelector, useDispatch} from 'react-redux';
 import {initItems} from './actions';
 import TaskHeader from './TaskHeader';
 import TaskForm from './TaskForm';
 import TaskItems from './TaskItems';
 
+const mapStateToProps = state => ({
+    tasks : state,
+});
 
-const TaskTracker = () => {
-    const tasks = useSelector(state => state);
+const TaskTracker = ({tasks}) => {
+    // const tasks = useSelector(state => state);
     const dispatch = useDispatch();
 
     const AddTask = (task) =>{
@@ -34,4 +37,8 @@ const TaskTracker = () => {
 }
 
 
-export default TaskTracker;
+
+
+export default connect(
+    mapStateToProps
+)(TaskTracker);

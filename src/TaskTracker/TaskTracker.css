@@ -3,9 +3,28 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid lightgray;
-  padding: 10px;
+  /* border: 1px solid lightgray; */
+  box-shadow: 0px 0px 10px #888888;
+  padding: 3em;
   border-radius: 10px;
+  max-width: 400px;
+  width:100%;
+}
+
+input { outline: none; }
+
+.input-text{
+  -webkit-appearance: none;
+  border-style: none;
+  background-color: rgb(242, 242, 242);
+
+}
+
+.input-text:hover{
+  border-bottom: 3px solid grey;
+}
+.input-text:focus{
+  border-bottom: 3px solid grey;
 }
 
 .task-input{
@@ -22,8 +41,10 @@
 .task-list .list-group-item{
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 30px;
   background-color: rgb(242, 242, 242);
+  font-size: 16px;
+  box-shadow: 0px 0px 4px #888888;
 }
 
 .list-group-item + .list-group-item{
@@ -33,4 +54,12 @@
 .task-header{
   display: flex;
   justify-content: center;
+}
+.input-text + .btn{
+  margin-left: 15px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
 }
