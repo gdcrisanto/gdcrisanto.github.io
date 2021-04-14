@@ -39,6 +39,4 @@ const TaskTracker = ({tasks}) => {
 
 
 
-export default connect(
-    mapStateToProps
-)(TaskTracker);
+export default connect(mapStateToProps)(TaskTracker);

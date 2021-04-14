@@ -1,40 +1,78 @@
-div{
-  display: flex;
-  justify-content: center;
-  width: auto;
+body{
+  background-color: #00956D;
 }
 
+
 #root{
-  font-family: 'Raleway', sans-serif;
-  width: 100%;
-  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  width: 95%;
+  
 }
+
 .row{
   width: 100%;
+  
 }
 
 .col{
-  flex-direction: column;
+  width: 50%;
 }
 
-.nav-menu{
-    ul{
-        display:flex;
-        justify-content: center;
-    }
-    .nav-item{
-        display:flex; 
-        font-weight: 500;
-        font-family: 'Overpass', sans-serif;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
-        a{
-            text-decoration: none;
-            color: #6c6ea0;
-        }
-        
-        .active{
-            font-weight:bold;
-            color: #515279;
-        }
+
+.nav-header.row{
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin:auto;
+  margin-bottom: 50px;
+  // margin-top: 10px;
+}
+
+.nav-logo-col{
+  display: flex;
+  width: 50%;
+  ul{
+    display: flex;
+    .nav-logo{
+      display:flex; 
+      font-weight: 500;
+      font-family: 'Lato', sans-serif;
+      align-items: center;
+      width: 100%;
+      a{
+        margin-left: 4%;
+        text-decoration: none;
+        color: white;
+        display:flex;
+      }
     }
+  }
+}
+
+.nav-menu-col{
+  display: flex;
+  width: 50%;
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    .nav-item{
+      display:flex; 
+      font-weight: 300;
+      font-family: 'Lato', sans-serif;
+      a{
+        text-decoration: none;
+        color: white;
+        display:flex;
+      }
+    }
+    .nav-item + .nav-item{
+      margin-left: 5%;
+    }
+  }
 }
