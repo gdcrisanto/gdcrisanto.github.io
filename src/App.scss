@@ -5,7 +5,7 @@ body{
 
 #root{
   font-family: 'Lato', sans-serif;
-  width: 95%;
+  width: 100%;
   
 }
 
@@ -18,25 +18,22 @@ body{
   width: 50%;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 
 
 .nav-header.row{
   display: flex;
   align-items: center;
-  max-width: 80%;
+  max-width: 85%;
   margin:auto;
   margin-bottom: 50px;
   // margin-top: 10px;
+  
 }
 
 .nav-logo-col{
   display: flex;
   width: 50%;
+  
   ul{
     display: flex;
     .nav-logo{
@@ -77,6 +74,9 @@ body{
     }
     .nav-item + .nav-item{
       margin-left: 5%;
+    }
+    .nav-item:hover{
+      font-weight: 500;
     }
   }
 }

@@ -1,6 +1,5 @@
 import "./App.scss";
 import logo from "./GDC_logo_2.png"
-// import TaskTracker from "./TaskTracker/TaskTracker";
 import Home from "./Home/Home";
 import {
   HashRouter as Router,

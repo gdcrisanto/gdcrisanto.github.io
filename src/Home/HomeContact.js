@@ -6,10 +6,9 @@ function HomeContact() {
           <h1>Get in touch</h1>
       </div>
       <div className="row contact-subtitle">
-        Feel free to contact me.
+        Interested in working together?<br/> Feel free to message me or send an email.
       </div>
       <div className="row contact-social">
-          Aspiring Fullstack developer,<br></br> Front-end capable.
       </div>
     </div>
   );

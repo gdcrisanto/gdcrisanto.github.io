@@ -1,5 +1,5 @@
 import "./Home.scss";
-import photo from "../GDC.png";
+import photo from "../GDC.jpg";
 import email from "../GDC_email.png";
 function HomeHeader() {
   return (
@@ -22,6 +22,7 @@ function HomeHeader() {
         </div>
         <div className="row about-capabilities">
             <img src={email} alt="Email" />
+            <div className="email">Email gdcrisanto@gmail.com</div>
         </div>
        </div>
       </div>

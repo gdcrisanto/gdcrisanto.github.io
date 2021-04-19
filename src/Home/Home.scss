@@ -1,5 +1,5 @@
 .home-container{
-    width: 1100px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -18,38 +18,43 @@
         color: white;
         display: flex;
         flex-wrap: wrap; 
-        .row{
-            width: 100%;
-        }
+        // .row{
+        //     width: 100%;
+        // }
         .col{
             flex-direction: column;
         }
     }
     
 }
-
+///////////////////////////////ABOUT///////////////////////////////////
 
 .home-about{
+    max-width: 75%;
+    margin:auto;
+    padding: 10px 0 40px 0;
     .col{
         width: 50%;
     }
-
-
-    .about-photo-container img{
-        max-width: 80%;
-        height: auto;
-        margin:auto;
+    
+    
+    .about-photo-container{ 
+        img{
+            width: 80%;
+            height: auto;
+            box-shadow: -10px 10px #ffffff;
+        }  
     }
     
     .about-main{
         align-items: center;
+        margin-bottom: 40px;
     }
-
+    
     .about-career{
         font-family: 'Lato', sans-serif;
-        margin-top: 40px;
         h1{
-            font-size: 48px;
+            font-size: 4.5vw;
         }
     }
     
@@ -57,70 +62,133 @@
         margin-top: 10px;
         font-family: 'Heebo', sans-serif;
         font-weight: 300;
+        font-size: 1.4vw;
         img{
             max-width: 50%;
             width: auto;
             margin-top: 20px
         }
+        .email{
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     .about-education, .about-interests, .about-experience{
         font-family: 'Overpass', sans-serif;
-        font-size: 14px;
-        justify-content:left;
-        max-width: 450px;
-        margin: 40px;
+        padding: 20px 0 20px 0;
+        // max-width: 450px;
         flex-direction: column;
         h2{
-            font-size: 32px;
+            font-size: 2.4vw;
             margin:0px;
         }
         h3{
             margin:0px;
             font-weight: 300;
-            font-size: 16px;
+            font-size: 1.4vw;
             opacity: 0.5;
         }
         h3 + h3{
             margin-top: 10px;
         }
         p{
-            font-size: 16px;
+            font-size: 1.4vw;
+            
         }
     }
     .about-capabilities, .about-career{
         justify-content:left;
-        max-width: 450px;
-        margin-left:40px;
+        // max-width: 450px;
     }
 }
 
+///////////////////////////////WORK///////////////////////////////////
+
 .home-work{
-    
-    border: 1px solid;
+    padding: 150px 0 150px 0;
+    width: 100%;
+    background-color: white;
+    div{
+        color:#00956D;
+    }
+    h1{
+        font-size: 4.5vw;
+    }
+    .work-subtitle{
+        font-size: 1.4vw;
+    }
+    .home-work-container{
+        width:75%;
+        margin:auto;
+    }
     .col{
-        width:100%;
+        width:100%
+        ;
     }
     .work-title, .work-subtitle{
         font-family: 'Lato', sans-serif;
-        justify-content:left;
-        margin-left:40px;
         max-width: 100%;
+    }
+    .work-portfolio{
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+        
+        .portfolio{
+            flex-direction: column;
+            width:30%;
+            img{
+                width: 100%;
+            }
+            
+            div{
+                justify-content: flex-start;
+                flex-direction: column;
+                margin:auto;
+                width:85%;
+                h4{
+                    display: flex;
+                    margin:0%;
+                    font-size: 1.8vw;
+                }
+                p{
+                    font-size: 1.4vw;
+                    display: flex;
+                    margin:0%;
+                    color: grey;
+                    
+                }
+            }
+        }
+    }
+    .work-subtitle + .work-portfolio{
+        margin-top: 40px;
+    }
+    .work-portfolio + .work-portfolio{
+        margin-top: 40px
     }
 }
 
+///////////////////////////////CONTACT///////////////////////////////////
+
 .home-contact{
+    width:75%;
+    margin: auto;
+    padding: 150px 0 150px 0;
+    h1{
+        font-size: 4.5vw;
+    }
     
     .contact-title{
         font-family: 'Lato', sans-serif;
     }
     .contact-subtitle, .contact-social{
         font-family: 'Overpass', sans-serif;
-        font-size: 14px;
+        font-size: 1.4vw;
     }
     .contact-title, .contact-subtitle, .contact-social{
         justify-content:left;
-        margin-left:40px;
     }
 
 }
