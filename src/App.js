@@ -20,7 +20,7 @@ function App() {
             <nav>
               <ul>
                 <li className="nav-logo">
-                  <img width="50px" src={logo} alt="Logo" />
+                  <img src={logo} alt="Logo" />
                   <NavLink smooth duration={400} to="about" className="nav-name">
                     Diego Crisanto
                   </NavLink>

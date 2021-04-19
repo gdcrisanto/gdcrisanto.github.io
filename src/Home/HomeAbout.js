@@ -21,7 +21,6 @@ function HomeHeader() {
             I create solutions, I learn from challenges,<br></br> and I love what I do.
         </div>
         <div className="row about-capabilities">
-            <img src={email} alt="Email" />
             <div className="email">Email gdcrisanto@gmail.com</div>
         </div>
        </div>

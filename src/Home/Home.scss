@@ -42,7 +42,7 @@
         img{
             width: 80%;
             height: auto;
-            box-shadow: -10px 10px #ffffff;
+            box-shadow: -15px 15px #ffffff;
         }  
     }
     
@@ -69,8 +69,16 @@
             margin-top: 20px
         }
         .email{
+            margin-top: 20px;
             justify-content: center;
             align-items: center;
+            background-color: white;
+            color: #00956D;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 1.4vw;
+            padding: 15px;
+            box-shadow: -15px 15px #01684d;
         }
     }
     
