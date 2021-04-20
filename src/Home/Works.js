@@ -24,6 +24,7 @@ function Works() {
         (error) => {
           setIsLoaded(true);
           setError(error);
+          console.log(error);
         }
       )
   }, [])
@@ -34,13 +35,17 @@ function Works() {
     return <div>Loading...</div>;
   } else {
     return (
-      <ul>
+      <div className="row work-portfolio">
         {items.map(item => (
-          <li key={item.id}>
-            {item.website} {item.role}
-          </li>
+          <div key={item.id} className="portfolio">
+            <img src={item.image}/>
+            <div>
+              <h4>{item.website}</h4> 
+              <p>{item.role}</p>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     );
   }
 }
