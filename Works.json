@@ -1,0 +1,34 @@
+{
+    "works": [
+        {
+            "id": 1,
+            "website": "Katapult Digital",
+            "role": "Web Developer & Tech Specialist",
+            "image": "./KD.png"
+        },
+        {
+            "id": 2,
+            "website": "Famous Belgian Waffles",
+            "role": "Web Developer",
+            "image": "./FBW.png"
+        },
+        {
+            "id": 3,
+            "website": "digi-VORTEX",
+            "role": "Web Developer",
+            "image": "./DV.png"
+        },
+        {
+            "id": 4,
+            "website": "Sinag Solutions",
+            "role": "Web Developer",
+            "image": "./SS.png"
+        },
+        {
+            "id": 5,
+            "website": "MarkProf Foundation",
+            "role": "Web Developer",
+            "image": "./MP.png"
+        }
+    ]
+}
