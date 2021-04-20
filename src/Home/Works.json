@@ -1,0 +1,29 @@
+{
+    "works": [
+        {
+            "id": 1,
+            "website": "Katapult Digital",
+            "role": " Web Developer & Tech Specialist"
+        },
+        {
+            "id": 2,
+            "website": "Famous Belgian Waffles",
+            "role": " Web Developer"
+        },
+        {
+            "id": 3,
+            "website": "digi-VORTEX",
+            "role": " Web Developer"
+        },
+        {
+            "id": 4,
+            "website": "Sinag Solutions",
+            "role": " Web Developer"
+        },
+        {
+            "id": 5,
+            "website": "MarkProf Foundation",
+            "role": " Web Developer"
+        }
+    ]
+}

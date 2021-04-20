@@ -1,6 +1,5 @@
 import "./Home.scss";
-import photo from "../GDC.jpg";
-import email from "../GDC_email.png";
+import GDC from "../GDC.jpg";
 function HomeHeader() {
   return (
     
@@ -8,7 +7,7 @@ function HomeHeader() {
       <div className="row about-main">
         <div className="col about-photo">
           <div className="row about-photo-container">
-            <img src={photo} alt="Photo" />
+            <img src={GDC} alt="GDC" />
           </div>
        </div>  
 

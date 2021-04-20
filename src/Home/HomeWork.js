@@ -4,6 +4,9 @@ import FBW from "../FBW.png"
 import DV from "../DV.png"
 import SS from "../SS.png"
 import MP from "../MP.png"
+
+import Works from './Works.js';
+
 function HomeWork() {
   return (
     <div className="row home-work" id="work">
@@ -51,9 +54,10 @@ function HomeWork() {
                 <h4>MarkProf Foundation</h4>
                 <p>Web Developer</p>
               </div>
-            </div> 
-            <div className="  portfolio">
-            </div> 
+            </div>
+            <div>
+              <Works/>
+            </div>
         </div>
       </div>
     </div>
