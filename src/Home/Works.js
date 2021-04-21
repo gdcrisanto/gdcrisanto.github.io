@@ -38,7 +38,7 @@ function Works() {
       <div className="row work-portfolio">
         {items.map(item => (
           <div key={item.id} className="portfolio">
-            <img src={item.image}/>
+            <img src={item.image} alt={item.website}/>
             <div>
               <h4>{item.website}</h4> 
               <p>{item.role}</p>
