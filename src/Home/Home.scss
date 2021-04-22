@@ -195,7 +195,11 @@
 .home-contact{
     width:75%;
     margin: auto;
-    padding: 150px 0 150px 0;
+    .contact-container{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    height: auto;
     h1{
         font-size: 4.5vw;
     }
@@ -209,6 +213,12 @@
     }
     .contact-title, .contact-subtitle, .contact-social{
         justify-content:left;
+    }
+    .contact-copyright{
+        font-size: 1vw;
+        align-self: flex-end;
+        justify-content: center;
+        padding: 10px;
     }
 
 }
