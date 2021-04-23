@@ -35,17 +35,17 @@ function App() {
             <nav className="">
               <ul>
                 <li className="nav-item">
-                  <NavLink smooth duration={400} to="about" activeClassName="active">
+                  <NavLink smooth duration={400} to="about">
                     About
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink smooth duration={400} to="work" activeClassName="active">
+                  <NavLink smooth duration={400} to="work" >
                     Works
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink smooth duration={400} to="contact" activeClassName="active">
+                  <NavLink smooth duration={400} to="contact">
                     Contact
                   </NavLink>
                 </li>

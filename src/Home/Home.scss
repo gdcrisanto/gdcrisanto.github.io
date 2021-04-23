@@ -125,7 +125,7 @@
 @media screen and (max-width: 768px) {
     
 .home-about{
-    max-width: 80%;
+    max-width: 85%;
     margin:auto;
     padding: 10px 0 40px 0;
     .col{
@@ -182,6 +182,35 @@
             padding: 15px;
             box-shadow: -15px 15px #01684d;
         }
+    }
+    .about-education{
+        margin-top:20px
+    }
+    
+    .about-education, .about-interests, .about-experience{
+        font-family: 'Overpass', sans-serif;
+        padding: 20px 0 20px 0;
+        flex-direction: column;
+        h2{
+            font-size: 4vh;
+            margin:0px;
+        }
+        h3{
+            margin:0px;
+            font-weight: 300;
+            font-size: 2.4vh;
+            opacity: 0.5;
+        }
+        h3 + h3{
+            margin-top: 10px;
+        }
+        p{
+            font-size: 2.4vh;
+            
+        }
+    }
+    .about-capabilities, .about-career{
+        justify-content:left;
     }
 
 }
@@ -255,6 +284,75 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+.home-work{
+    padding: 30px 0 30px 0;
+    width: 100%;
+    background-color: white;
+    div{
+        color:#00956D;
+    }
+    h1{
+        font-size: 4.5vh;
+    }
+    .work-subtitle{
+        font-size: 2.4vh;
+    }
+    .home-work-container{
+        width:85%;
+        margin:auto;
+    }
+    .col{
+        width:100%
+        ;
+    }
+    .work-title, .work-subtitle{
+        font-family: 'Lato', sans-serif;
+        max-width: 100%;
+    }
+    .work-portfolio{
+        width: 100%;
+        margin: auto;
+        align-content: space-between;
+        
+        .portfolio{
+            flex-direction: column;
+            width:100%;
+            margin: 20px 0 20px 0;
+            img{
+                width: 100%;
+            }
+            
+            div{
+                justify-content: flex-start;
+                flex-direction: column;
+                margin:auto;
+                width:85%;
+                h4{
+                    display: flex;
+                    margin:0%;
+                    font-size: 2.8vh;
+                }
+                p{
+                    font-size: 2.4vh;
+                    display: flex;
+                    margin:0%;
+                    color: grey;
+                    
+                }
+            }
+        }
+    }
+    .work-subtitle + .work-portfolio{
+        margin-top: 40px;
+    }
+    .work-portfolio + .work-portfolio{
+        margin-top: 40px
+    }
+}
+}
+
+
 ///////////////////////////////CONTACT///////////////////////////////////
 
 .home-contact{
@@ -325,4 +423,46 @@
         margin-left: 10px
     }
 
+}
+
+@media screen and (max-width: 768px) {
+.home-contact{
+    width:85%;
+    margin: auto;
+    .contact-container{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    height: auto;
+    h1{
+        font-size: 4.5vh;
+    }
+    
+    .contact-title{
+        font-family: 'Lato', sans-serif;
+    }
+    .contact-subtitle, .contact-social{
+        font-family: 'Overpass', sans-serif;
+        font-size: 2.4vh;
+        margin-top: 1em;
+    }
+    .contact-title, .contact-subtitle, .contact-social{
+        justify-content:left;
+    }
+    .contact-copyright{
+        font-size: 1.5vh;
+        align-self: flex-end;
+        justify-content: center;
+        padding: 10px;
+    }
+    .fa {
+    padding: .5em;
+    font-size: 2.4vh;
+    width: 1em;
+    height:auto;
+    text-align: center;
+    text-decoration: none;
+    // border-radius: 50%;
+    }
+}
 }
