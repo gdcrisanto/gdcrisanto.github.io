@@ -42,7 +42,7 @@
         position: sticky;
         top: 0;
     }
-
+    
     .about-intro, .about-info{
         margin-top: 100px;
     }
@@ -90,7 +90,7 @@
             box-shadow: -15px 15px #01684d;
         }
     }
-
+    
     .about-education{
         margin-top:50px
     }
@@ -120,6 +120,71 @@
     .about-capabilities, .about-career{
         justify-content:left;
     }
+
+}
+@media screen and (max-width: 768px) {
+    
+.home-about{
+    max-width: 80%;
+    margin:auto;
+    padding: 10px 0 40px 0;
+    .col{
+        width: 100%;
+    }
+
+    .about-photo{
+        position: relative;
+    }
+    
+    .about-intro, .about-info{
+    margin-top: 30px;
+    }
+    .about-photo-container{ 
+        margin-top:0px;
+        img{
+            margin: auto;
+            width: 100%;
+            height: auto;
+            box-shadow: -15px 15px #ffffff;
+        }  
+    }
+
+    .about-main{
+    align-items: center;
+    // margin-bottom: 40px;
+    }
+
+    .about-career{
+        font-family: 'Lato', sans-serif;
+        h1{
+            font-size: 4.5vh;
+        }
+    }
+    .about-capabilities{
+        margin-top: 10px;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 300;
+        font-size: 2.3vh;
+        img{
+            max-width: 50%;
+            width: auto;
+            margin-top: 20px
+        }
+        .email{
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #00956D;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 2.3vh;
+            padding: 15px;
+            box-shadow: -15px 15px #01684d;
+        }
+    }
+
+}
 }
 
 ///////////////////////////////WORK///////////////////////////////////

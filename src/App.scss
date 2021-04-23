@@ -19,7 +19,6 @@ body{
 }
 
 
-
 .nav-header.row{
   font-size: 1.4vw;
   display: flex;
@@ -83,4 +82,18 @@ body{
       font-weight: 500;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+.nav-header.row{
+  font-size: 2.3vh;
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  margin:auto;
+  // margin-bottom: 50px;
+  // margin-top: 10px;
+  
+}
+
 }
